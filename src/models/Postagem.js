@@ -12,7 +12,7 @@ class Postagem extends Model {
       {
         sequelize,
         tableName: "postagens",
-        underscored: true
+        underscored: true,
       }
     );
   }
