@@ -5,7 +5,10 @@ var serviceAccount = require("../config/firebase-key.json");
 const BUCKET = "senai-overflow2.appspot.com";
 
 admin.initializeApp({
-  credential: admin.credential.cert(serviceAccount),
+  credential: admin.credential.cert({
+    "private_key": process.env.FIREBASE_PRIVATE_KEY,
+    "client_email": process.env.FIREBASE_CLIENT_EMAIL,
+  }),
   storageBucket: BUCKET,
 });
 
