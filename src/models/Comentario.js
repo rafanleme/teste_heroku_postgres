@@ -8,7 +8,8 @@ class Comentario extends Model {
       },
       {
         sequelize,
-        tableName: "comentarios"
+        tableName: "comentarios",
+        underscored: true
       }
     );
   }

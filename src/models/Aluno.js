@@ -11,7 +11,8 @@ class Aluno extends Model {
       },
       {
         sequelize,
-        tableName: "alunos"
+        tableName: "alunos",
+        underscored: true
       }
     );
   }
