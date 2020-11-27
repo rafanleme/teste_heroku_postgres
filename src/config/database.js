@@ -3,11 +3,15 @@
 
 module.exports = process.env.DATABASE_URL || {
   dialect: "postgres",
+  protocol: "postgres",
   host: "postgresql-perpendicular-30629",
   username: "postgres",
   password: "bcd127",
   database: "senai_overflow",
   logging: console.log,
+  dialectOptions: {
+    ssl: true,
+  },
   define: {
     timestamp: true,
     underscored: true,
