@@ -8,6 +8,7 @@ class Comentario extends Model {
       },
       {
         sequelize,
+        tableName: "comentarios"
       }
     );
   }
