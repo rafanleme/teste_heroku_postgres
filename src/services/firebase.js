@@ -11,7 +11,7 @@ admin.initializeApp({
     type: "service_account",
     project_id: "senai-overflow",
     private_key_id: "73066f27e33601b0035117947f795a484b773efe",
-    private_key: process.env.FIREBASE_PRIVATE_KEY,
+    private_key: process.env.FIREBASE_PRIVATE_KEY.replace(/\\n/g, '\n'),
     client_email: process.env.FIREBASE_CLIENT_EMAIL,
     client_id: "105469033790114328493",
     auth_uri: "https://accounts.google.com/o/oauth2/auth",
