@@ -16,4 +16,7 @@ module.exports = process.env.DATABASE_URL || {
     timestamp: true,
     underscored: true,
   },
+  production: {
+    use_env_variable: "DATABASE_URL",
+  },
 };
