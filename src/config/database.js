@@ -3,7 +3,7 @@
 
 module.exports = process.env.CLEARDB_DATABASE_URL || {
   dialect: "postgres",
-  host: "localhost",
+  host: "postgresql-perpendicular-30629",
   username: "postgres",
   password: "bcd127",
   database: "senai_overflow",
