@@ -1,6 +1,6 @@
 var admin = require("firebase-admin");
 
-var serviceAccount = require("../config/firebase-key.json");
+// var serviceAccount = require("../config/firebase-key.json");
 
 const BUCKET = "senai-overflow2.appspot.com";
 
